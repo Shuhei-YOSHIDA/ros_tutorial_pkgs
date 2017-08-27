@@ -31,4 +31,6 @@ int main(int argc, char **argv)
   // ros::Subscriberに設定したコールバック関数が呼ばれる．
   // nodeが止められるまで，待ち受け状態は続く
   ros::spin();
+
+  return 0;
 }
