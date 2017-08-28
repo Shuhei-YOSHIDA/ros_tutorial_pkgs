@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  std_srvs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -135,6 +136,8 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(${PROJECT_NAME}_node_1 src/node1_1.cpp)
 add_executable(${PROJECT_NAME}_node_2 src/node1_2.cpp)
+add_executable(${PROJECT_NAME}_node_3 src/node1_3.cpp)
+add_executable(${PROJECT_NAME}_node_4 src/node1_4.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -146,12 +149,21 @@ add_executable(${PROJECT_NAME}_node_2 src/node1_2.cpp)
 ## same as for the library above
 add_dependencies(${PROJECT_NAME}_node_1 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(${PROJECT_NAME}_node_2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_node_3 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_node_4 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(${PROJECT_NAME}_node_1
   ${catkin_LIBRARIES}
 )
 target_link_libraries(${PROJECT_NAME}_node_2
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(${PROJECT_NAME}_node_3
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(${PROJECT_NAME}_node_4
   ${catkin_LIBRARIES}
 )
 #############

@@ -1,5 +1,5 @@
 #include <ros/ros.h>
-#include <std_msgs/String.h>
+#include <std_msgs/String.h> //メッセージ(型)のインクルード
 
 /**
  * 単純に一つのtopicをpublishするnode
