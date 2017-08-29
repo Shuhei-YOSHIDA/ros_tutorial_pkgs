@@ -35,3 +35,10 @@ node "node1_4"
 std_msgs/UInt16 型のtopic "num_data" をsubscribeして，
 それに応じてstd_msgs/String 型のtopic "s_data"をpublishするnode.
 また，std_srvs/Trigger 型のservice "switch_message"を実行する．
+
+## src/node1_6.cpp
+ROS parameter を読み出すnode. string型の"param1" と，
+float型の"param2"をパラメータサーバから読みだして端末に表示する．
+また，"int_param", "string_param", "bool_param"という名前のparameterを
+パラメータサーバに登録する．
+
