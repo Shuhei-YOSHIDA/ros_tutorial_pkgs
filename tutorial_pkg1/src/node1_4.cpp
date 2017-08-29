@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     if (setbool_srv.response.success)
       ROS_INFO("success:true, message:%s", message.c_str());
     else
-      ROS_INFO("success:false, message:%s", message.c_str()); 
+      ROS_INFO("success:false, message:%s", message.c_str());
   }
   else
     ROS_ERROR("Failed to call service_SetBool_example!");

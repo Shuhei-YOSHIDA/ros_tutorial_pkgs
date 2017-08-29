@@ -12,6 +12,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   std_srvs
+  actionlib
+  actionlib_msgs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -106,7 +108,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES tutorial_pkg1
-#  CATKIN_DEPENDS roscpp rospy std_msgs
+  CATKIN_DEPENDS roscpp rospy std_msgs actionlib actionlib_msgs
 #  DEPENDS system_lib
 )
 
@@ -140,6 +142,8 @@ add_executable(${PROJECT_NAME}_node_3 src/node1_3.cpp)
 add_executable(${PROJECT_NAME}_node_4 src/node1_4.cpp)
 add_executable(${PROJECT_NAME}_node_5 src/node1_5.cpp)
 add_executable(${PROJECT_NAME}_node_6 src/node1_6.cpp)
+add_executable(${PROJECT_NAME}_node_7 src/node1_7.cpp)
+add_executable(${PROJECT_NAME}_node_8 src/node1_8.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -155,6 +159,8 @@ add_dependencies(${PROJECT_NAME}_node_3 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${ca
 add_dependencies(${PROJECT_NAME}_node_4 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(${PROJECT_NAME}_node_5 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 add_dependencies(${PROJECT_NAME}_node_6 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_node_7 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+add_dependencies(${PROJECT_NAME}_node_8 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 
 ## Specify libraries to link a library or executable target against
@@ -174,6 +180,12 @@ target_link_libraries(${PROJECT_NAME}_node_5
   ${catkin_LIBRARIES}
 )
 target_link_libraries(${PROJECT_NAME}_node_6
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(${PROJECT_NAME}_node_7
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(${PROJECT_NAME}_node_8
   ${catkin_LIBRARIES}
 )
 #############
