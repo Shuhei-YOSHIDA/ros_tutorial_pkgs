@@ -67,8 +67,8 @@ public:
     _num_sub = _n.subscribe("num_data", 1, &node1_5::callback, this);
     _switch_srv = _n.advertiseService("switch_message", &node1_5::switchMessage, this);
 
-    _message_set[0] = "(=^･x･^=) < nyan ";
-    _message_set[1] = "U・x・U < wang ";
+    _message_set[0] = "(=^+x+^=) < nyan ";
+    _message_set[1] = "U* x* U < wang ";
     _message_index = 0; //_message_set の添字
   }
 };
