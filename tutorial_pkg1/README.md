@@ -7,7 +7,7 @@ ROSのnode, topicなど基本事項に対するチュートリアルのための
 
 Description
 ====
-このパッケージのnode群
+**このパッケージのnode群**
 
 ## src/node1_1.cpp
 std_msgs/String 型のtopic "s_data"を周期的にpublishするnode "node1_1"
@@ -46,4 +46,18 @@ float型の"param2"をパラメータサーバから読み出して端末に表�
 actionlib/TestAction 型に基づくaction server
 
 ## src/node1_8.cpp
-actiono server "node1_7"に命令するaction client
+action server "node1_7"に命令するaction client
+
+
+**このパッケージで定義されたmsg**
+
+## msg/motor_data.msg
+例として，モータの名前，最大印加電圧，電源状態のデータを含むmsgを定義した
+
+
+**このパッケージで定義されたsrv**
+
+## srv/move_motor.srv
+例として，tutorial\_pkg1/motor_data 型のデータと目標位置を渡して，
+その可否とメッセージが返却されるようなsrvを定義した
+
