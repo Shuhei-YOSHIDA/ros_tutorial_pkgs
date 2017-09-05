@@ -1,0 +1,6 @@
+# Example of srv file
+motor_data m_data
+float64[] target_positions
+---
+bool success
+string[2] messages
