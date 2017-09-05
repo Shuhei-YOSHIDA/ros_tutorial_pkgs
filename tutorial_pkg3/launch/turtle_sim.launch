@@ -1,0 +1,18 @@
+<!-- before $ roslaunch this_pkg this_file -->
+<!-- $ export TURTLEBOT_3D_SENSOR="kinect" -->
+<launch>
+  <!-- launch simulator -->
+  <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+    <!-- possible to set args, etc -->
+  </include>
+
+  <!-- launch RViz with config file -->
+  <node name="$(anon rviz)" pkg="rviz" type="rviz" args="-d $(find tutorial_pkg3)/launch/config/turtle_sim.rviz"/>
+
+  <!-- launch tutorial_pkg2/node -->
+  <node name="node2_1" pkg="tutorial_pkg2" type="tutorial_pkg2_node_1">
+    <!-- remap names of node "tutorial_pkg2_node_1" -->
+    <remap from="/camera/rgb/image_rect_color" to="/camera/rgb/image_raw"/>
+    <remap from="/camera/depth_registered/points" to="/camera/depth/points"/>
+  </node>
+</launch>
