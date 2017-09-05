@@ -12,8 +12,8 @@ How To Use
 
 ```bash
 ## (distro)の部分はROSのdistributionに合わせること．ex.kinetic, indigo
-$ apt install ros-(distro)-turtlebot-gazebo
-$ apt install ros-(distro)-turtlebot-teleop
+$ sudo apt install ros-(distro)-turtlebot-gazebo
+$ sudo apt install ros-(distro)-turtlebot-teleop
 ## 初回起動時にシミュレータ上のオブジェクトの自動ダウンロードがある(かも)
 $ roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
