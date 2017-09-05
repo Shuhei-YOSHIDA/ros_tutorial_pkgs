@@ -145,6 +145,7 @@ void scan_Callback(const sensor_msgs::LaserScan::ConstPtr& msg)
   output.pose.position.x = cod[0];
   output.pose.position.y = cod[1];
   output.pose.position.z = cod[2];
+  output.pose.orientation.w = 1.0;
 
   ROS_INFO("x:%f, y:%f, z:%f", cod[0], cod[1], cod[2]);
 
