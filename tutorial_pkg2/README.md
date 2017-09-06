@@ -5,6 +5,14 @@ Overview
 ====
 センサから得られたデータをROSを通して処理する例
 
+How to Use
+====
+kinect実機などを使う場合は以下のようにfreenectを入れておくと良いでしょう
+
+```bash
+$ sudo apt install ros-(distro)-freenect-stack
+```
+
 Description
 ====
 * sensor_msgs/PointCloud2 型 (3次元点群)

@@ -37,6 +37,11 @@ $ sudo apt install ros-(distro)-turtlebot-teleop
 $ roslaunch turtlebot_gazebo turtlebot_world.launch
 ```
 
+また，次のfreenectをインストールしておくと，実機のkinect などが使えます．
+```bash
+$ sudo apt install ros-(distro)-freenect-stack
+```
+
 ## コードの準備とレポジトリのビルド
 まず，ROSのワークスペースを作ります．
 すでにどこかで作ったことがあるかもしれません．
