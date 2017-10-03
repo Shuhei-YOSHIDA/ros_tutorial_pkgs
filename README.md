@@ -1,5 +1,5 @@
-[![Build Status](https://travis-ci.org/Shuhei-YOSHIDA/ros_tutorial_pkgs_20170907.svg?branch=master)](https://travis-ci.org/Shuhei-YOSHIDA/ros_tutorial_pkgs_20170907)
-# tutorial_pkgs_20170907
+[![Build Status](https://travis-ci.org/Shuhei-YOSHIDA/ros_tutorial_pkgs.svg?branch=master)](https://travis-ci.org/Shuhei-YOSHIDA/ros_tutorial_pkgs)
+# ros_tutorial_pkgs
 このレポジトリはROSのチュートリアルです．
 
 
@@ -52,7 +52,7 @@ $ sudo apt install ros-(distro)-freenect-stack
 次にこのレポジトリをワークスペースのsrcディレクトリにクローンします．
 下記のコマンド,
 ```bash
-~/your_ws/src$ git clone https://github.com/Shuhei-YOSHIDA/ros_tutorial_pkgs_20170907.git
+~/your_ws/src$ git clone https://github.com/Shuhei-YOSHIDA/ros_tutorial_pkgs.git
 ```
 を実行してください．
 
