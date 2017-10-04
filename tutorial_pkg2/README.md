@@ -25,3 +25,6 @@ Description
 * 3次元点群から平面検出
 * LRFのデータを読み取り，その重心を計算
 * 画像からHough変換を用いて直線を抽出する
+
+## src/node2_1.cpp
+* sensor_msgs/PointCloud2型を扱う
