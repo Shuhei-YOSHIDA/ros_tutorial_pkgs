@@ -11,6 +11,6 @@ message_filterについての例
 
 ## Cache
 
-## Policy-Based Synchoronizer
+## Policy-Based Synchronizer
 
 ## Chain
